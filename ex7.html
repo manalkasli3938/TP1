@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo07</title>
+</head>
+<body>
+    <h1>créer votre compte</h1>
+    <fieldset>
+    <legend>identité:</legend>
+    <label for="nom">nom</label>
+    <input type="text" id="nom" placeholder="saisir votre nom" required><br><br>
+     <label for="prénom">prénom</label>
+    <input type="text" id="prénom" placeholder="saisir votre prénom" required><br><br>
+     <label for="Date de naissance">Date de naissance</label>
+    <input type="date" id="Date de naissance"  min="1900-01-01" max=" date('Y-m-d')"><br><br>
+    </fieldset>
+    <fieldset>
+    <legend>contact:</legend>
+    <label for="telephone">Téléphone :</label>
+     <input type="tel" id="telephone" name="telephone" pattern="^0[5-7]\d{8}$"
+             title="Numéro marocain : commence par 05, 06 ou 07 et contient 10 chiffres."
+             placeholder="saisir votre Numéro de telephone" required>
+    <label for="site">Site personnel :</label>
+      <input type="url" id="site" name="site" placeholder="https://example.com">
+    </fieldset>
+    <fieldset>
+
+      <legend>Sécurité</legend>
+      <label for="motdepasse">Mot de passe :</label>
+      <input type="password" id="motdepasse" name="motdepasse" minlength="8" required>
+      <label for="confirmation">Confirmation du mot de passe :</label>
+      <input type="password" id="confirmation" name="confirmation" minlength="8" required>
+    </fieldset>
+
+     <fieldset>
+      <legend>Préférences</legend>
+      <input type="checkbox" id="newsletter" name="newsletter" > 
+       <label for="newsletter">recevoir la newsletter</label><br><br>
+
+       <legend>Rôle:</legend>
+       <input type="radio" name="role" value="etudiant" required> </label>
+       <label for="etudiant">etudiant</label><br>
+
+       <input type="radio" id="pro" name="role" value="pro">
+            <label for="pro">Pro</label><br><br>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+
+  </form>
+
+</body>
+</html>
